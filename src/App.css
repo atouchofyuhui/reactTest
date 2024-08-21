@@ -1,0 +1,122 @@
+/* src/App.css */
+
+/* 将整个页面内容居中 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  height: 100vh; /* 设置高度为视口高度 */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* 修改 input 框的样式 */
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #e0f7fa;  /* 输入框背景颜色 */
+  color: #004d40;  /* 文字颜色 */
+}
+
+/* 聚焦时 input 框的样式 */
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+/* 提交按钮样式 */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button.active {
+  background-color: #0056b3; /* 激活状态的按钮颜色 */
+}
+
+/* 悬停时提交按钮的样式 */
+button:hover {
+  background-color: #0056b3;  /* 悬停时按钮的背景颜色 */
+}
+
+/* 禁用按钮的样式 */
+button:disabled {
+  background-color: #cccccc; /* 禁用时的背景颜色 */
+  cursor: not-allowed;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li span {
+  font-size: 18px;
+  color: #333;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li button {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+li button.complete-btn {
+  background-color: #007bff;
+}
+
+li button.complete-btn:hover {
+  background-color: #0056b3;
+}
+
+li button.delete-btn:hover {
+  background-color: #c82333;
+}
